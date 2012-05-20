@@ -37,7 +37,8 @@ end
 
 group :development, :test do
   gem 'foreman', '~> 0.40'
-  gem 'sqlite3', '~> 1', platform: [:ruby, :mswin, :mingw]
+# gem 'sqlite3', '~> 1', platform: [:ruby, :mswin, :mingw]
+  gem 'mysql2'
   gem 'faker', '~> 1'
   gem 'factory_girl_rails', '~> 1'
 end

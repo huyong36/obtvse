@@ -1,0 +1,10 @@
+---
+title:               Tumayun's Blog
+tagline:             Tumayun's Blog Admin.
+login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "user_name" %>
+password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
+name:                tumayun
+twitter:             tumayun
+github:              tumayun
+email:               tumayun.2010@gmail.com
+google_analytics_id: YOUR_GA_ID

@@ -4,10 +4,12 @@ class ApplicationController < ActionController::Base
   private
 
   def authenticate
-    authenticate_or_request_with_http_basic do |login, password|
-      if login == CONFIG['login'] and password == CONFIG['password']
-      	session[:admin] = true
-      	true
+    if Rails.env == 'production'
+      authenticate_or_request_with_http_basic do |login, password|
+        if login == CONFIG['login'] and password == CONFIG['password']
+          session[:admin] = true
+          true
+        end
       end
     end
   end
